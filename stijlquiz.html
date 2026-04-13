@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stijlquiz — CirKle</title>
+  <meta name="description" content="Ontdek je stijl met de CirKle stijlquiz. In een paar stappen weten wij precies wat bij jou past.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav"><div class="nav-inner"><a href="index.html" class="nav-logo">CIRKLE</a><ul class="nav-links" id="navLinks"><li><a href="hoe-het-werkt.html">Hoe het werkt</a></li><li><a href="prijzen.html">Prijzen</a></li><li><a href="duurzaamheid.html">Duurzaamheid</a></li><li><a href="over-ons.html">Over ons</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="index.html#waitlist" class="nav-cta">Schrijf je in</a></li></ul><button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button></div></nav>
+
+  <section class="page-hero section-cream" style="padding-bottom: 2rem;">
+    <div class="container text-center">
+      <span class="section-label reveal">Stijlquiz</span>
+      <h1 class="section-title reveal">Ontdek jouw <em>stijl</em></h1>
+      <p class="section-subtitle centered reveal">Beantwoord een paar vragen — duurt maar 2 minuten.</p>
+    </div>
+  </section>
+
+  <section class="section section-white" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="quiz-container">
+        <div class="quiz-progress">
+          <div class="quiz-dot active"></div>
+          <div class="quiz-dot"></div>
+          <div class="quiz-dot"></div>
+          <div class="quiz-dot"></div>
+          <div class="quiz-dot"></div>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="quiz-step active">
+          <h2 class="quiz-question">Hoe zou je je ideale stijl omschrijven?</h2>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="minimal"><div class="quiz-option-label">Minimalistisch</div><p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">Clean, strak, weinig prints</p></div>
+            <div class="quiz-option" data-value="casual"><div class="quiz-option-label">Casual &amp; relaxed</div><p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">Comfortabel, moeiteloos</p></div>
+            <div class="quiz-option" data-value="smart"><div class="quiz-option-label">Smart casual</div><p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">Verzorgd maar niet te stijf</p></div>
+            <div class="quiz-option" data-value="bold"><div class="quiz-option-label">Opvallend</div><p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">Statement pieces, texturen</p></div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="quiz-step">
+          <h2 class="quiz-question">Welke kleuren spreken je aan?</h2>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="neutrals"><div style="display: flex; gap: 4px; justify-content: center; margin-bottom: 0.5rem;"><span style="width: 16px; height: 16px; border-radius: 50%; background: #2C365A; display: inline-block;"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: #C4BCB0; display: inline-block;"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: #EEE8DF; display: inline-block;"></span></div><div class="quiz-option-label">Neutrale tinten</div></div>
+            <div class="quiz-option" data-value="earth"><div style="display: flex; gap: 4px; justify-content: center; margin-bottom: 0.5rem;"><span style="width: 16px; height: 16px; border-radius: 50%; background: #5C4033; display: inline-block;"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: #8B7355; display: inline-block;"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: #4A7C59; display: inline-block;"></span></div><div class="quiz-option-label">Aardtinten</div></div>
+            <div class="quiz-option" data-value="mono"><div style="display: flex; gap: 4px; justify-content: center; margin-bottom: 0.5rem;"><span style="width: 16px; height: 16px; border-radius: 50%; background: #1A1A1A; display: inline-block;"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: #555; display: inline-block;"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: #F5F5F5; display: inline-block;"></span></div><div class="quiz-option-label">Zwart / wit / grijs</div></div>
+            <div class="quiz-option" data-value="color"><div style="display: flex; gap: 4px; justify-content: center; margin-bottom: 0.5rem;"><span style="width: 16px; height: 16px; border-radius: 50%; background: #B85C38; display: inline-block;"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: #2D6A4F; display: inline-block;"></span><span style="width: 16px; height: 16px; border-radius: 50%; background: #3D5A80; display: inline-block;"></span></div><div class="quiz-option-label">Kleuraccenten</div></div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="quiz-step">
+          <h2 class="quiz-question">Hoe ziet een doorsnee dag eruit?</h2>
+          <div class="quiz-options">
+            <div class="quiz-option" data-value="office"><div class="quiz-option-label">Kantoor / meetings</div></div>
+            <div class="quiz-option" data-value="hybrid"><div class="quiz-option-label">Hybride werken</div></div>
+            <div class="quiz-option" data-value="creative"><div class="quiz-option-label">Creatief / eigen baas</div></div>
+            <div class="quiz-option" data-value="active"><div class="quiz-option-label">Actief / veel onderweg</div></div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="quiz-step">
+          <h2 class="quiz-question">Hoe draag je het liefst je kleding?</h2>
+          <div class="quiz-options" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="quiz-option" data-value="slim"><div class="quiz-option-label">Slim fit</div><p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">Aansluitend</p></div>
+            <div class="quiz-option" data-value="regular"><div class="quiz-option-label">Regular fit</div><p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">Comfortabel</p></div>
+            <div class="quiz-option" data-value="relaxed"><div class="quiz-option-label">Relaxed fit</div><p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.3rem;">Ruim, oversized</p></div>
+          </div>
+        </div>
+
+        <!-- Step 5: Result -->
+        <div class="quiz-step">
+          <div class="text-center">
+            <div class="icon" style="margin: 0 auto 1.5rem;"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <h2 class="quiz-question">Je stijlprofiel is klaar</h2>
+            <p style="color: var(--text-secondary); max-width: 420px; margin: 0 auto 2rem; line-height: 1.7;">Op basis van je antwoorden kunnen we een garderobe samenstellen die bij je past. Schrijf je in en je profiel wordt bewaard.</p>
+            <form class="waitlist-form" style="max-width: 420px; margin: 0 auto;">
+              <input type="email" class="waitlist-input" placeholder="Je e-mailadres" required>
+              <button type="submit" class="btn btn-primary">Bewaar profiel</button>
+            </form>
+            <div class="waitlist-success">Profiel bewaard. We nemen contact op zodra CirKle live gaat.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="footer-grid"><div class="footer-brand"><span class="nav-logo">CIRKLE</span><p>Elk seizoen een nieuwe garderobe. Duurzaam, moeiteloos en altijd in stijl.</p></div><div class="footer-col"><h4>Navigatie</h4><a href="hoe-het-werkt.html">Hoe het werkt</a><a href="prijzen.html">Prijzen</a><a href="duurzaamheid.html">Duurzaamheid</a></div><div class="footer-col"><h4>Bedrijf</h4><a href="over-ons.html">Over ons</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div><div class="footer-col"><h4>Contact</h4><a href="mailto:hallo@cirkle.nl">hallo@cirkle.nl</a><span>Amsterdam, NL</span></div></div><div class="footer-bottom"><span>&copy; 2026 CirKle</span><span>Privacy · Voorwaarden</span></div></footer>
+  <script src="main.js"></script>
+</body>
+</html>

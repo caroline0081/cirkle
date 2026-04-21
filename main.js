@@ -44,20 +44,9 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-// =============== WAITLIST ===============
-document.querySelectorAll('.waitlist-form').forEach(form => {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const input = form.querySelector('.waitlist-input');
-    if (!input || !input.value.trim()) return;
-    form.style.display = 'none';
-    const success = form.nextElementSibling;
-    if (success && success.classList.contains('waitlist-success')) {
-      success.style.display = 'block';
-    }
-    input.value = '';
-  });
-});
+// =============== WAITLIST (Mailchimp) ===============
+// Mailchimp forms submit normally to Mailchimp's servers (no preventDefault)
+// They open in a new tab via target="_blank"
 
 // =============== FAQ ===============
 document.querySelectorAll('.faq-question').forEach(btn => {
